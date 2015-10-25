@@ -12,7 +12,6 @@
 " mono2: #828997
 " mono3: #5C6370 comments
 
-
 set background=dark
 highlight clear
 
@@ -21,6 +20,7 @@ if exists("syntax_on")
 endif
 
 let g:colors_name = "one-dark"
+
 hi Normal       guifg='#abb2bf' guibg='#282C34'
 hi Visual                       guibg='#3e4451'
 hi NonText      guifg='#282C34'
@@ -39,7 +39,8 @@ hi Question     guifg='#98C379'
 hi SpecialKey   guifg='#528bff'
 
 hi Statusline   guifg='#9DA5B4' guibg='#21252b' gui=none
-hi StatuslineNC guifg='#9DA5B4' guibg='#21252b' gui=none
+hi StatuslineNC guifg='#21252b' guibg='#9DA5B4'
+
 hi VertSplit    guifg='#181a1f' guibg='#21252b' gui=none
 hi ColorColumn  guibg='#3c4049'
 
