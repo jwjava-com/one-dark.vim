@@ -9,18 +9,18 @@
 " mono1: #ABB2BF // default text
 " mono2: #828997
 " mono3: #5C6370 // comments
-"
-" Cursor color: (not working) #3f5e9d
-hi Normal       guifg='#abb2bf' guibg='#282C34' 
+
+hi Normal       guifg='#abb2bf' guibg='#282C34'
 hi Visual                       guibg='#3e4451'
 hi NonText      guifg='#282C34'
 hi Delimiter    guifg='#abb2bf'
+hi Cursor       guibg='#3f5e9d'
 hi LineNr       guifg='#4B5262'
 hi CursorLineNr guifg='#ABB2BF' gui=none
 hi CursorLine   guibg='#2C323B'
 hi Comment      guifg='#5C6370' gui=italic
 hi Paren        guifg='#ABB2BF'
-hi MatchParen                   guibg='#353b45' gui=underline 
+hi MatchParen                   guibg='#353b45' gui=underline
 hi Directory    guifg='#61AFEF'
 hi PreProc      guifg='#D19A66'
 hi Search                       guibg='#3E4451'
@@ -35,7 +35,7 @@ hi ColorColumn  guibg='#3c4049'
 hi Pmenu        guifg='#abb2bf' guibg='#23262d'
 hi PmenuSel     guifg='#d7d8db' guibg='#3a3f4b'
 
-hi Include      guifg='#C678DD' 
+hi Include      guifg='#C678DD'
 hi Macro        guifg='#C678DD'
 hi Type         guifg='#C678DD'                 gui=none
 hi Structure    guifg='#C678DD'
