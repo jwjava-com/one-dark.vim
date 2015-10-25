@@ -1,3 +1,5 @@
+" Gvim color file
+"
 " Blue #61afef
 " Blue (accent #528BFF)
 " Orange 1 #d19a66
@@ -6,10 +8,19 @@
 " Red1 #e06c75
 " Red2 #be5046
 "
-" mono1: #ABB2BF // default text
+" mono1: #ABB2BF default text
 " mono2: #828997
-" mono3: #5C6370 // comments
+" mono3: #5C6370 comments
 
+
+set background=dark
+highlight clear
+
+if exists("syntax_on")
+  syntax reset
+endif
+
+let g:colors_name = "one-dark"
 hi Normal       guifg='#abb2bf' guibg='#282C34'
 hi Visual                       guibg='#3e4451'
 hi NonText      guifg='#282C34'
