@@ -30,6 +30,7 @@ hi LineNr       guifg='#4B5262'
 hi CursorLineNr guifg='#ABB2BF' gui=none
 hi CursorLine   guibg='#2C323B'
 hi Comment      guifg='#5C6370' gui=italic
+hi Todo         guifg='#c678dd' guibg='#282C34' gui=italic
 hi Paren        guifg='#ABB2BF'
 hi MatchParen                   guibg='#353b45' gui=underline
 hi Directory    guifg='#61AFEF'
