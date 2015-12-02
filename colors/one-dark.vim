@@ -22,6 +22,17 @@ endif
 let g:colors_name = "one-dark"
 
 hi Normal       guifg='#abb2bf' guibg='#282C34'
+hi Comment      guifg='#5C6370'                 gui=italic ctermfg=008
+hi Constant     guifg='#D19A66'                            ctermfg=011
+hi Identifier   guifg='#e06c75'                            ctermfg=009
+hi Statement    guifg='#C678DD'                 gui=none   ctermfg=013
+hi PreProc      guifg='#D19A66'                            ctermfg=011
+hi Type         guifg='#C678DD'                 gui=none   ctermfg=013
+hi Special      guifg='#e06c75'                            ctermfg=009
+
+hi Number       guifg='#D19A66'                            ctermfg=011
+hi Float        guifg='#D19A66'                            ctermfg=011
+
 hi Visual                       guibg='#3e4451'
 hi NonText      guifg='#282C34'
 hi Delimiter    guifg='#abb2bf'
@@ -29,18 +40,23 @@ hi Cursor       guibg='#3f5e9d'
 hi LineNr       guifg='#4B5262'
 hi CursorLineNr guifg='#ABB2BF' gui=none
 hi CursorLine   guibg='#2C323B'
-hi Comment      guifg='#5C6370' gui=italic
 hi Todo         guifg='#c678dd' guibg='#282C34' gui=italic
 hi Paren        guifg='#ABB2BF'
 hi MatchParen                   guibg='#353b45' gui=underline
 hi Directory    guifg='#61AFEF'
-hi PreProc      guifg='#D19A66'
 hi Search                       guibg='#3E4451'
 hi Question     guifg='#98C379'
 hi SpecialKey   guifg='#528bff'
 
+" status bar
 hi Statusline   guifg='#9DA5B4' guibg='#21252b' gui=none
 hi StatuslineNC guifg='#21252b' guibg='#9DA5B4'
+
+" tab line
+hi tablinefill  guifg='#21252b' guibg='#21252b'
+hi Tabline      guifg='#9da5b4' guibg='#21252b' gui=none
+hi tablinesel                                   gui=none
+hi title        guifg='#9da5b4'                 gui=none
 
 hi VertSplit    guifg='#181a1f' guibg='#21252b' gui=none
 hi ColorColumn  guibg='#3c4049'
@@ -50,23 +66,16 @@ hi PmenuSel     guifg='#d7d8db' guibg='#3a3f4b'
 
 hi Include      guifg='#C678DD'
 hi Macro        guifg='#C678DD'
-hi Type         guifg='#C678DD'                 gui=none
 hi Structure    guifg='#C678DD'
 hi String       guifg='#98C379'
 hi Character    guifg='#98C379'
 hi Function     guifg='#61afef'
 hi Operator     guifg='#ABB2BF'
 hi Conditional  guifg='#C678DD'
-hi Number       guifg='#D19A66'
-hi Float        guifg='#D19A66'
-hi Statement    guifg='#C678DD'                 gui=none
 hi Keyword      guifg='#C678DD'
-hi Constant     guifg='#D19A66'
 hi StorageClass guifg='#C678DD'
-hi Special      guifg='#e06c75'
 hi SpecialChar  guifg='#56B6C2'
 hi Repeat       guifg='#C678DD'
-hi Identifier   guifg='#e06c75'
 
 hi cppType      guifg='#C678DD'
 hi cIncluded    guifg='#98C379'
