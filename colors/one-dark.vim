@@ -21,7 +21,7 @@ endif
 
 let g:colors_name = "one-dark"
 
-hi Normal       guifg='#abb2bf' guibg='#282C34'
+hi Normal       guifg=#abb2bf guibg=#282C34
 hi Comment      guifg='#5C6370'                 gui=italic ctermfg=008
 hi Constant     guifg='#D19A66'                            ctermfg=011
 hi Identifier   guifg='#e06c75'                            ctermfg=009
@@ -47,6 +47,10 @@ hi Directory    guifg='#61AFEF'
 hi Search                       guibg='#3E4451'
 hi Question     guifg='#98C379'
 hi SpecialKey   guifg='#528bff'
+
+hi Folded       guifg=none      guibg=none     gui=italic
+hi FoldColumn   guifg=none      guibg=none
+hi SignColumn                   guibg=none
 
 " status bar
 hi Statusline   guifg='#9DA5B4' guibg='#21252b' gui=none
@@ -81,4 +85,31 @@ hi cppType      guifg='#C678DD'
 hi cIncluded    guifg='#98C379'
 hi cDefineVar   guifg='#61AFEF'
 
-hi vimVar       guifg='#56b6c2'
+hi vimVar       guifg=#56b6c2
+
+" ----
+" diff
+" ----
+" TODO this section needs work
+" completely new text
+hi DiffAdd      guibg=#c1f0c1
+" empty space
+hi DiffDelete   guifg=#282C34 guibg=none
+" new whitespace?
+hi DiffChange   guibg=#f0f0c1
+
+hi DiffText     guibg=#990000
+
+" -------
+" Neomake
+" -------
+hi NeomakeWarningSign guifg=#cc8533
+hi NeomakeErrorSign   guifg=#d92626
+
+" ---------
+" GitGutter
+" ---------
+hi GitGutterAdd          guifg=#388E67
+hi GitGutterChange       guifg=#968564
+hi GitGutterDelete       guifg=#964245
+" hi GitGutterChangeDelete
