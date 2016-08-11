@@ -21,6 +21,8 @@ endif
 
 let g:colors_name = "one-dark"
 
+" TODO get vim cursor color to work correctly
+
 hi Normal       guifg=#abb2bf guibg=#282C34
 hi Comment      guifg='#5C6370'                 gui=italic ctermfg=008
 hi Constant     guifg='#D19A66'                            ctermfg=011
@@ -36,7 +38,6 @@ hi Float        guifg='#D19A66'                            ctermfg=011
 hi Visual                       guibg='#3e4451'
 hi NonText      guifg='#282C34'
 hi Delimiter    guifg='#abb2bf'
-hi Cursor       guibg='#3f5e9d'
 hi LineNr       guifg='#4B5262'
 hi CursorLineNr guifg='#ABB2BF' gui=none
 hi CursorLine   guibg='#2C323B'
@@ -44,7 +45,7 @@ hi Todo         guifg='#c678dd' guibg='#282C34' gui=italic
 hi Paren        guifg='#ABB2BF'
 hi MatchParen                   guibg='#353b45' gui=underline
 hi Directory    guifg='#61AFEF'
-hi Search                       guibg='#3E4451'
+hi Search       guifg=none      guibg='#3E4451'
 hi Question     guifg='#98C379'
 hi SpecialKey   guifg='#528bff'
 
@@ -111,5 +112,5 @@ hi NeomakeErrorSign   guifg=#d92626
 " ---------
 hi GitGutterAdd          guifg=#388E67
 hi GitGutterChange       guifg=#968564
+hi GitGutterChangeDelete guifg=#968564
 hi GitGutterDelete       guifg=#964245
-" hi GitGutterChangeDelete
